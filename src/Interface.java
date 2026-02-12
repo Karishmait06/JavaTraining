@@ -20,9 +20,9 @@ class TV implements SmartTVRemote{
     public void volumeUp() {
         System.out.println("TV Volume up");
     }
-    public void volumeDown() {
-        System.out.println("TV Volume down");
-    }
+    // public void volumeDown() {
+    //     System.out.println("TV Volume down");
+    // }
 }
 
 public class Interface {
@@ -30,7 +30,7 @@ public class Interface {
         TV lg = new TV();
         lg.switchOn();
         lg.volumeUp();
-        lg.volumeDown();
+        // lg.volumeDown();
         lg.switchOff();
     }
 }

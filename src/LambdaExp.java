@@ -1,5 +1,11 @@
+// Java lambda expression can implement interfaces with 
+// a single unimplemented method, known as abstract method. These interfaces are called functional interfaces.
+// but as many default and static methods as you want. 
+// They can also have overridden methods from Object class,
+//  but they don't count towards the single abstract method requirement.
 
-@FunctionalInterface
+
+@FunctionalInterface // Annotation to indicate that this interface is intended to be a functional interface
 interface Printer {
     void print();
 }

@@ -38,7 +38,29 @@ class Square {
 
 }
 
-public class OOPS {
+class Rectangle{
+    public void getArea(int length, int breadth) {
+        System.out.println("Area of reactangle with length " +length+ " and breadth " +breadth+ " is : " +length*breadth);
+    }
+
+    public void getPerimeter(int length, int breadth) {
+        System.out.println("Perimeter of reactangle with length " +length+ " and breadth " +breadth+ " is : " +2*(length+breadth));
+    }
+}
+
+class TommyVecetti {
+ public void hit() {
+    System.out.println("Hitting the enemy!");
+ }
+ public void run() {
+    System.out.println("Running from the enemy!");
+ }
+    public void fire() {
+        System.out.println("Firing on the enemy!");
+    }
+}
+
+public class OOPS_PracticeSet8 {
     public static void main(String[] args) {
         Employee emp = new Employee();
         emp.id = 1;
@@ -53,6 +75,15 @@ public class OOPS {
         Square sq = new Square();
         sq.getArea(10);
         sq.getPerimeter(10);
+
+        Rectangle rect = new Rectangle();
+        rect.getArea(10,20);
+        rect.getPerimeter(10,20);
+
+        TommyVecetti tommy = new TommyVecetti();
+        tommy.hit();
+        tommy.run();
+        tommy.fire();
 
     }
 }

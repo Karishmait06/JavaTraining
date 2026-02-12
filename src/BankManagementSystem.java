@@ -175,7 +175,7 @@ public class BankManagementSystem {
                 sc.nextLine();
                 System.out.print("Enter Account Type : ");
                 String accountType = sc.nextLine();
-                manager.(name, initialDeposit, accountType);
+                manager.createAccount(name, initialDeposit, accountType);
             }
             case 2 -> {
                 System.out.print("Enter Account Number : ");
